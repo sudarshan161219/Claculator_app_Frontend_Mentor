@@ -86,9 +86,9 @@ table {
     }
 
     .container{
-        /* margin-top:1rem; */
+        margin-top:3rem;
         display: grid;
-        gap: 10px;
+        gap: 20px;
     }
 
 
@@ -188,7 +188,7 @@ table {
 
 .output{
     border-radius: 5px;
-    height: 60px;
+    height: 75px;
     background-color: var(--bs-screenbackground);
     display: flex;
     align-items: flex-end;
@@ -201,7 +201,7 @@ table {
 
 .calculator-box{
     display:grid;
-    gap: 15px;
+    gap: 25px;
 }
 
 
