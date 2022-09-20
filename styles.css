@@ -75,18 +75,21 @@ table {
 
     
     body {
-        /* display: flex; */
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        /* min-height: 90vh; */
         font-family: 'League Spartan', sans-serif;
         background-color:var(--bs-mainbackground);
-        margin: 2rem 1rem;
+        margin: 1.5rem 1rem;
         font-weight: 700;
         transition: all 0.3s;
     }
 
+    .container{
+        /* margin-top:1rem; */
+        display: grid;
+        gap: 10px;
+    }
 
 
     .header {
@@ -119,7 +122,6 @@ table {
 .one, .two, .three{
     margin: 0;
     z-index: 1;
-    /* visibility: hidden; */
     opacity: 0;
 }
 
@@ -152,8 +154,6 @@ table {
     height: 100%;
     border-radius: 50px;
     transition: 0.3s;
-    /* background-color: var(--bs-screenbackground); */
-
   }
 
   .slider::before {
@@ -185,8 +185,55 @@ table {
     font-size: 1.7rem;
 }
 
+
+.output{
+    border-radius: 5px;
+    height: 60px;
+    background-color: var(--bs-screenbackground);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px 15px;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+.calculator-box{
+    display:grid;
+    gap: 15px;
+}
+
+
+.output .previous-operand{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .75);
+}
+
+.output .current-operand{
+    font-size: 1.3rem;
+    color:white;
+}
+
+.button-box{
+    background-color: var(--bs-cardBG);
+    /* padding: 1rem; */
+    gap: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(4, auto);  
+    grid-template-rows: repeat(5, 4.4rem);
+    border-radius: 5px;
+  }
+  
+  .span-two{
+    grid-column: span 2;
+  }
+
+
+/* Themes */
 .body-two{
-    background-color:darkseagreen;
+    background-color:gray;
     transition: all 0.3s;
 }
 
