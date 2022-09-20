@@ -210,30 +210,56 @@ table {
 
 
 .output .previous-operand{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, .75);
 }
 
 .output .current-operand{
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     color:white;
 }
 
 .button-box{
+    padding: 1.3rem;
     background-color: var(--bs-cardBG);
-    /* padding: 1rem; */
-    gap: 10px;
-    width: 100%;
+    gap: 15px;
+    justify-content: center;
     display: grid;
-    grid-template-columns:repeat(4, auto);  
-    grid-template-rows: repeat(5, 4.4rem);
     border-radius: 5px;
   }
-  
-  .span-two{
-    grid-column: span 2;
+
+  .row{
+    /* display: flex; */
+    width: 100%;
   }
 
+ button{
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: var(--bs-keybackground);
+    border-radius: 5px;
+    width: 65px;
+    height: 70px;
+    margin: 0.22rem;
+    color: var(--bs-Verydarkgrayishblue);
+    outline: none;
+    border: none;
+  }
+  
+.row > .span-two{
+width: 46.6%;
+
+
+  }
+.delete, .reset{
+    color: var(--bs-White);
+    background-color: var(--bs-blueKeyBackground);
+}
+
+.equal{
+    color: var(--bs-White);
+    background-color: var(--bs-keyBackgroundToggle);
+}
 
 /* Themes */
 .body-two{
