@@ -119,7 +119,8 @@ table {
 .one, .two, .three{
     margin: 0;
     z-index: 1;
-    visibility: hidden;
+    /* visibility: hidden; */
+    opacity: 0;
 }
 
 .label-one, .label-two, .label-three, .para-heading{
