@@ -135,19 +135,19 @@ table {
 
 .label-one {
     position: absolute;
-    top: -13px;
+    top: -15px;
     left: 7px;
 }
 
 .label-two{
     position:absolute;
-    top: -13px;
+    top: -15px;
     left: 23px;
 }
 
 .label-three{
     position:absolute;
-    top: -13px;
+    top: -15px;
     left: 41px
 }
 
@@ -203,18 +203,6 @@ table {
     text-overflow: clip;
 }
 
-/* .output{
-   grid-column: 1 / -1;
-background-color:rgba(0, 0, 0, .75);
-display: flex;
-align-items: flex-end;
-justify-content: space-around;
-flex-direction: column;
-padding: 35px;
-word-wrap:break-word;
-word-break: break-all; 
-} */
-
 
 .calculator-box{
     display:grid;
@@ -235,20 +223,21 @@ word-break: break-all;
 .button-box{
     padding: 1.3rem;
     background-color: var(--bs-cardBG);
-    gap: 15px;
+    gap: 8px;
     justify-content: center;
     display: grid;
     border-radius: 10px;
   }
 
   .row{
-    /* display: flex; */
+    gap: 8px;
+    display: flex;
     width: 100%;
   }
 
  button{
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: var(--bs-keybackground);
     border-radius: 5px;
     width: 65px;
@@ -257,6 +246,7 @@ word-break: break-all;
     color: var(--bs-Verydarkgrayishblue);
     outline: none;
     border: none;
+    box-shadow: ;
   }
   
   button:hover , button:focus{
@@ -270,11 +260,13 @@ width: 46.6%;
 
   }
 .delete, .reset{
+    font-size: 1.2rem;
     color: var(--bs-White);
     background-color: var(--bs-blueKeyBackground);
 }
 
 .equal{
+    font-size: 1.2rem;
     color: var(--bs-White);
     background-color: var(--bs-keyBackgroundToggle);
 }
