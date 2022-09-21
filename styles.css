@@ -189,9 +189,9 @@ table {
 }
 
 
-.output{
+.output{   
+  min-height: 75px;
     border-radius: 10px;
-    height: 75px;
     background-color: var(--bs-screenbackground);
     display: flex;
     align-items: flex-end;
@@ -200,7 +200,21 @@ table {
     padding: 5px 15px;
     word-wrap:break-word;
     word-break: break-all;
+    text-overflow: clip;
 }
+
+/* .output{
+   grid-column: 1 / -1;
+background-color:rgba(0, 0, 0, .75);
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+padding: 35px;
+word-wrap:break-word;
+word-break: break-all; 
+} */
+
 
 .calculator-box{
     display:grid;
