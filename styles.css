@@ -133,7 +133,7 @@ table {
 .toggle {
     display: flex;
     height: 20px;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     width: 55px;
     border-radius: 30px;
     background-color: var(--bs-screenbackground);
@@ -205,7 +205,7 @@ table {
   }
 
 .heading{
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 
@@ -316,7 +316,7 @@ width: 46.6%;
 }
 
 .header-two{
-    color: black;
+    color: var(--theme2-Verydarkgrayishyellow);
     transition: all 0.3s;
 }
 
@@ -327,10 +327,11 @@ width: 46.6%;
 
 .output .current-operand-two, 
 .output .previous-operand-two{
-    color: black;
+    color: var(--theme2-Verydarkgrayishyellow);
+
 }
 
-.button-box-two{
+.button-box-two, .toggle-two{
     background-color: var(--theme2-togglekeypadbackground);
 }
 
@@ -342,6 +343,11 @@ width: 46.6%;
     background-color: var(--theme2-keyBackgroundToggle);
 }
 
+.buttons-two{
+    color: var(--theme2-Verydarkgrayishyellow);
+}
+
+/* Theme-3 */
 
 .body-three{
   

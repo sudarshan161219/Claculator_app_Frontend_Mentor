@@ -3,10 +3,9 @@ const two = document.querySelector(".two");
 const three = document.querySelector(".three");
 const header = document.querySelector(".header");
 const output = document.querySelector(".output");
-const currentTheme = document.querySelector(".current-operand");
-const previousTheme = document.querySelector(".previous-operand");
-const buttonBox = document.querySelector(".button-box")
-// const deleteButton
+const buttonBox = document.querySelector(".button-box");
+const toggle = document.querySelector(".toggle");
+
 
 const body = document.body
 
@@ -16,12 +15,16 @@ one.addEventListener("click", () => {
         body.classList.remove("body-three");
         header.classList.remove("header-two");
         output.classList.remove("output-two");
-        currentTheme.classList.remove("current-operand-two");
-        previousTheme.classList.remove("previous-operand-two");
+        currentOperandText.classList.remove("current-operand-two");
+        previousOperandText.classList.remove("previous-operand-two");
         buttonBox.classList.remove("button-box-two");
         deleteButton.classList.remove("delete-two");
         resetButton.classList.remove("reset-two");
         equalButton.classList.remove("equal-two");
+        toggle.classList.remove("toggle-two");
+        buttons.forEach(button =>{
+            button.classList.remove("buttons-two");
+        });
 
     }
 });
@@ -32,16 +35,17 @@ two.addEventListener("click", () => {
         body.classList.remove("body-three");
         header.classList.add("header-two");
         output.classList.add("output-two");
-        currentTheme.classList.add("current-operand-two");
-        previousTheme.classList.add("previous-operand-two");
+        currentOperandText.classList.add("current-operand-two");
+        previousOperandText.classList.add("previous-operand-two");
         buttonBox.classList.add("button-box-two");
         deleteButton.classList.add("delete-two");
         resetButton.classList.add("reset-two");
         equalButton.classList.add("equal-two");
-
-
-
-
+        toggle.classList.add("toggle-two");
+        buttons.forEach(button =>{
+            button.classList.add("buttons-two");
+        });
+       
 
     }
 });
