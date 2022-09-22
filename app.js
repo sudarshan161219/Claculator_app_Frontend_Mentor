@@ -5,6 +5,8 @@ const header = document.querySelector(".header");
 const output = document.querySelector(".output");
 const currentTheme = document.querySelector(".current-operand");
 const previousTheme = document.querySelector(".previous-operand");
+const buttonBox = document.querySelector(".button-box")
+// const deleteButton
 
 const body = document.body
 
@@ -12,10 +14,14 @@ one.addEventListener("click", () => {
     if ('input[value=1]:checked') {
         body.classList.remove("body-two");
         body.classList.remove("body-three");
-        header.classList.remove("header-two")
-        output.classList.remove("output-two")
-        currentTheme.classList.remove("current-operand-two")
-        previousTheme.classList.remove("previous-operand")
+        header.classList.remove("header-two");
+        output.classList.remove("output-two");
+        currentTheme.classList.remove("current-operand-two");
+        previousTheme.classList.remove("previous-operand-two");
+        buttonBox.classList.remove("button-box-two");
+        deleteButton.classList.remove("delete-two");
+        resetButton.classList.remove("reset-two");
+        equalButton.classList.remove("equal-two");
 
     }
 });
@@ -24,10 +30,18 @@ two.addEventListener("click", () => {
     if ('input[value=2]:checked') {
         body.classList.add("body-two");
         body.classList.remove("body-three");
-        header.classList.add("header-two")
-        output.classList.add("output-two")
-        currentTheme.classList.add("current-operand-two")
-        previousTheme.classList.add("previous-operand")
+        header.classList.add("header-two");
+        output.classList.add("output-two");
+        currentTheme.classList.add("current-operand-two");
+        previousTheme.classList.add("previous-operand-two");
+        buttonBox.classList.add("button-box-two");
+        deleteButton.classList.add("delete-two");
+        resetButton.classList.add("reset-two");
+        equalButton.classList.add("equal-two");
+
+
+
+
 
     }
 });

@@ -77,7 +77,7 @@ table {
      
      /* Keys */
  
-     --theme2-keybackground: hsl(185, 42%, 37%);
+     --theme2-keybtnbackground: hsl(185, 42%, 37%);
      --theme2-darkcyankeyshadow: hsl(185, 58%, 25%);
      --theme2-keyBackgroundToggle: hsl(25, 98%, 40%);
      --theme2-orangekeyShadow:hsl(25, 99%, 27%);
@@ -325,9 +325,22 @@ width: 46.6%;
     transition: all 0.3s;
 }
 
-.current-operand-two, .previous-operand-two{
+.output .current-operand-two, .previous-operand-two{
     color: black;
 }
+
+.button-box-two{
+    background-color: var(--theme2-togglekeypadbackground);
+}
+
+.delete-two, .reset-two{
+    background-color:var(--theme2-keybtnbackground) ;
+}
+
+.equal-two{
+    background-color: var(--theme2-keyBackgroundToggle);
+}
+
 
 .body-three{
   
