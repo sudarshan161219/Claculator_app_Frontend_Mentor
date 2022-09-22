@@ -89,6 +89,7 @@ table {
   
 
     .container{
+        margin-top: 1.5rem;
         width: 350px;
         display: grid;
         gap: 20px;
