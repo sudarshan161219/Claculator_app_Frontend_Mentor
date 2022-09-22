@@ -60,7 +60,7 @@ table {
     --bs-blueKeyBackground: hsl(225, 21%, 49%);
     --bs-blueKeyShadow: hsl(224, 28%, 35%);
     --bs-keyBackgroundToggle: hsl(6, 63%, 50%);
-    --bs-keyShadow: hsl(6, 70%, 34%);
+    --bs-redkeyShadow: hsl(6, 70%, 34%);
     --bs-keybackground: hsl(30, 25%, 89%);
     --bs-keyshadow: rgb(180, 165, 151);
     
@@ -81,7 +81,7 @@ table {
         justify-content: center;
         font-family: 'League Spartan', sans-serif;
         background-color:var(--bs-mainbackground);
-        margin: 1.5rem 1rem;
+        margin: 1rem 0;
         font-weight: 700;
         transition: all 0.3s;
     }
@@ -89,7 +89,7 @@ table {
   
 
     .container{
-        /* margin-top:1rem; */
+        width: 350px;
         display: grid;
         gap: 20px;
     }
@@ -190,7 +190,7 @@ table {
 
 
 .output{   
-  min-height: 75px;
+  min-height: 80px;
     border-radius: 10px;
     background-color: var(--bs-screenbackground);
     display: flex;
@@ -246,11 +246,10 @@ table {
     color: var(--bs-Verydarkgrayishblue);
     outline: none;
     border: none;
-    box-shadow: ;
+    box-shadow: var(--bs-keyshadow) 0px -30px 2px -25px inset;;
   }
   
   button:hover , button:focus{
-    cursor: pointer;
     transition: all 0.3s;
     background-color: var(--bs-White);
   }
@@ -263,15 +262,19 @@ width: 46.6%;
     font-size: 1.2rem;
     color: var(--bs-White);
     background-color: var(--bs-blueKeyBackground);
+    box-shadow: var(--bs-blueKeyShadow) 0px -30px 2px -25px inset;
 }
 
 .equal{
     font-size: 1.2rem;
     color: var(--bs-White);
     background-color: var(--bs-keyBackgroundToggle);
+    box-shadow: var(--bs-redkeyShadow) 0px -30px 2px -25px inset;
+
 }
 
 .delete:hover, .delete:focus, .reset:hover, .reset:focus {
+    opacity: 0.8;
     background-color: var(--bs-blueKeyBackground);
 }
 
@@ -282,6 +285,7 @@ width: 46.6%;
 }
 
 .equal:hover, .equal:focus{
+    opacity: 0.8;
     background-color: var(--bs-keyBackgroundToggle);
 }
 
