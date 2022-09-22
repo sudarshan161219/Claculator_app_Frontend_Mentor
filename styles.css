@@ -325,7 +325,8 @@ width: 46.6%;
     transition: all 0.3s;
 }
 
-.output .current-operand-two, .previous-operand-two{
+.output .current-operand-two, 
+.output .previous-operand-two{
     color: black;
 }
 
