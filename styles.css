@@ -69,6 +69,25 @@ table {
      --bs-Verydarkgrayishblue: hsl(221, 14%, 31%);
      --bs-White: rgb(255, 255, 255);
 
+     /* Theme-2 */
+
+     --theme2-Lightgraymainbackground: hsl(0, 0%, 90%);
+     --theme2-togglekeypadbackground: hsl(0, 5%, 81%) ;
+     --theme2-screenbackground:hsl(0, 0%, 93%) ;
+     
+     /* Keys */
+ 
+     --theme2-keybackground: hsl(185, 42%, 37%);
+     --theme2-darkcyankeyshadow: hsl(185, 58%, 25%);
+     --theme2-keyBackgroundToggle: hsl(25, 98%, 40%);
+     --theme2-orangekeyShadow:hsl(25, 99%, 27%);
+     --theme2-keybackground: hsl(45, 7%, 89%);
+     --theme2-keyshadow:  hsl(35, 11%, 61%);
+     
+      /* Text */
+     
+      --theme2-Verydarkgrayishyellow:hsl(60, 10%, 19%);
+      --theme2-White: rgb(255, 255, 255);
     }
     
 
@@ -292,11 +311,26 @@ width: 46.6%;
 
 /* Themes */
 .body-two{
-    background-color:gray;
+    background-color:var(--theme2-Lightgraymainbackground);
     transition: all 0.3s;
 }
 
+.header-two{
+    color: black;
+    transition: all 0.3s;
+}
+
+.output-two{
+    background-color: var(--theme2-screenbackground);
+    transition: all 0.3s;
+}
+
+.current-operand-two, .previous-operand-two{
+    color: black;
+}
+
 .body-three{
+  
     background-color: burlywood;
     transition: all 0.3s;
 }

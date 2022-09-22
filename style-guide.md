@@ -43,7 +43,7 @@ The designs were created to the following widths:
 
 #### Keys
 
-- Dark moderate cyan (key background): hsl(185, 42%, 37%)
+- Dark moderate cyan 
 - Very dark cyan (key shadow): hsl(185, 58%, 25%)
 
 - Orange (key background, toggle): hsl(25, 98%, 40%)

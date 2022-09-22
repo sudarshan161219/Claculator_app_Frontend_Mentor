@@ -1,12 +1,22 @@
 const one = document.querySelector(".one");
 const two = document.querySelector(".two");
 const three = document.querySelector(".three");
+const header = document.querySelector(".header");
+const output = document.querySelector(".output");
+const currentTheme = document.querySelector(".current-operand");
+const previousTheme = document.querySelector(".previous-operand");
+
 const body = document.body
 
 one.addEventListener("click", () => {
     if ('input[value=1]:checked') {
         body.classList.remove("body-two");
         body.classList.remove("body-three");
+        header.classList.remove("header-two")
+        output.classList.remove("output-two")
+        currentTheme.classList.remove("current-operand-two")
+        previousTheme.classList.remove("previous-operand")
+
     }
 });
 
@@ -14,6 +24,11 @@ two.addEventListener("click", () => {
     if ('input[value=2]:checked') {
         body.classList.add("body-two");
         body.classList.remove("body-three");
+        header.classList.add("header-two")
+        output.classList.add("output-two")
+        currentTheme.classList.add("current-operand-two")
+        previousTheme.classList.add("previous-operand")
+
     }
 });
 
