@@ -77,7 +77,7 @@ The designs were created to the following widths:
 
 #### Text
 
-- Light yellow: hsl(52, 100%, 62%)
+- Lightyellow: hsl(52, 100%, 62%)
 - Very dark blue: hsl(198, 20%, 13%)
 - White (text): hsl(0, 0, 100%)
 

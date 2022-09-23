@@ -1,61 +1,3 @@
-const one = document.querySelector(".one");
-const two = document.querySelector(".two");
-const three = document.querySelector(".three");
-const header = document.querySelector(".header");
-const output = document.querySelector(".output");
-const buttonBox = document.querySelector(".button-box");
-const toggle = document.querySelector(".toggle");
-
-
-const body = document.body
-
-one.addEventListener("click", () => {
-    if ('input[value=1]:checked') {
-        body.classList.remove("body-two");
-        body.classList.remove("body-three");
-        header.classList.remove("header-two");
-        output.classList.remove("output-two");
-        currentOperandText.classList.remove("current-operand-two");
-        previousOperandText.classList.remove("previous-operand-two");
-        buttonBox.classList.remove("button-box-two");
-        deleteButton.classList.remove("delete-two");
-        resetButton.classList.remove("reset-two");
-        equalButton.classList.remove("equal-two");
-        toggle.classList.remove("toggle-two");
-        buttons.forEach(button =>{
-            button.classList.remove("buttons-two");
-        });
-
-    }
-});
-
-two.addEventListener("click", () => {
-    if ('input[value=2]:checked') {
-        body.classList.add("body-two");
-        body.classList.remove("body-three");
-        header.classList.add("header-two");
-        output.classList.add("output-two");
-        currentOperandText.classList.add("current-operand-two");
-        previousOperandText.classList.add("previous-operand-two");
-        buttonBox.classList.add("button-box-two");
-        deleteButton.classList.add("delete-two");
-        resetButton.classList.add("reset-two");
-        equalButton.classList.add("equal-two");
-        toggle.classList.add("toggle-two");
-        buttons.forEach(button =>{
-            button.classList.add("buttons-two");
-        });
-       
-
-    }
-});
-
-three.addEventListener("click", () => {
-    if ('input[value=3]:checked') {
-        body.classList.add("body-three");
-    }
-});
-
 class Calculator {
 constructor(previousOperandText, currentOperandText){
     this.previousOperandText = previousOperandText
@@ -157,6 +99,17 @@ updateDisplay(){
 
 }
 
+// ThEMES
+const one = document.querySelector(".one");
+const two = document.querySelector(".two");
+const three = document.querySelector(".three");
+const header = document.querySelector(".header");
+const output = document.querySelector(".output");
+const buttonBox = document.querySelector(".button-box");
+const toggle = document.querySelector(".toggle");
+const body = document.body
+
+// FUNCTIONALITY 
 const previousOperandText = document.querySelector('[data-previous-operand]');
 const currentOperandText = document.querySelector('[data-current-operand]');
 const buttons = document.querySelectorAll('[data-number]');
@@ -204,31 +157,91 @@ calculator.updateDisplay();
 
 
 
-// getDisplayNumber(number){
-// const stringNumber = number.toString();
-// const interDigits = parseFloat(stringNumber.split('.')[0]);
-// const decimalDigits = stringNumber.split('.')[1];
-// let interDisplay
-// if(isNaN(interDigits)){
-// interDisplay = ''
-// }else{
-// interDisplay = interDigits.toLocaleString('en', {maximumFractionDigits:0})
-// }
 
-// if(decimalDigits != null){
-// return `${interDisplay}.${decimalDigits}`
-// }else{
-// return interDisplay
-// }
 
-// }
 
-// updateDisplay(){
-//     this.currentOperandText.innerText = this.getDisplayNumber(this.currentOperand) 
-// if(this.operation != null){
-// this.previousOperandText.innerText =
-// `${this.getDisplayNumber(this.previousOperand)}  ${this.operation}`
-// }else{
-// this.previousOperandText.innerText = ''
-// }
-// }
+
+
+one.addEventListener("click", () => {
+    if ('input[value=1]:checked') {
+        body.classList.remove("body-two");
+        body.classList.remove("body-three");
+        header.classList.remove("header-two");
+        header.classList.remove("header-three");
+        output.classList.remove("output-two");
+        output.classList.remove("output-three");
+        currentOperandText.classList.remove("current-operand-two");
+        currentOperandText.classList.remove("current-operand-three");
+        previousOperandText.classList.remove("previous-operand-two");
+        previousOperandText.classList.remove("previous-operand-three");
+        buttonBox.classList.remove("button-box-two");
+        buttonBox.classList.remove("button-box-three");
+        deleteButton.classList.remove("delete-two");
+        resetButton.classList.remove("reset-two");
+        equalButton.classList.remove("equal-two");
+        toggle.classList.remove("toggle-two");
+        toggle.classList.remove("toggle-three");
+        buttons.forEach(button =>{
+            button.classList.remove("buttons-two");
+            button.classList.remove("buttons-three");
+        });
+        operationsButton.forEach( button => {
+            button.classList.remove("operation-three");
+        });
+    }
+});
+
+two.addEventListener("click", () => {
+    if ('input[value=2]:checked') {
+        body.classList.add("body-two");
+        body.classList.remove("body-three");
+        header.classList.add("header-two");
+        header.classList.remove("header-three");
+        output.classList.add("output-two");
+        output.classList.remove("output-three");
+        currentOperandText.classList.add("current-operand-two");
+        currentOperandText.classList.remove("current-operand-three");
+        previousOperandText.classList.add("previous-operand-two");
+        previousOperandText.classList.remove("previous-operand-three");
+        buttonBox.classList.add("button-box-two");
+        buttonBox.classList.remove("button-box-three");
+        deleteButton.classList.add("delete-two");
+        deleteButton.classList.remove("delete-three");
+        resetButton.classList.add("reset-two");
+        resetButton.classList.remove("reset-three");
+        equalButton.classList.add("equal-two");
+        equalButton.classList.remove("equal-three");
+        toggle.classList.add("toggle-two");
+        toggle.classList.remove("toggle-three");
+        buttons.forEach(button =>{
+            button.classList.add("buttons-two");
+            button.classList.remove("buttons-three");
+        });
+        operationsButton.forEach( button => {
+            button.classList.remove("operation-three");
+        });
+    }
+});
+
+three.addEventListener("click", () => {
+    if ('input[value=3]:checked') {
+        body.classList.add("body-three");
+        body.classList.remove("body-two");
+        header.classList.add("header-three");
+        output.classList.add("output-three");
+        currentOperandText.classList.add("current-operand-three");
+        previousOperandText.classList.add("previous-operand-three");
+        buttonBox.classList.add("button-box-three");
+        toggle.classList.add("toggle-three");
+        deleteButton.classList.add("delete-three");
+        resetButton.classList.add("reset-three");
+        equalButton.classList.add("equal-three");
+        buttons.forEach(button =>{
+            button.classList.add("buttons-three");
+        });
+        operationsButton.forEach( button => {
+            button.classList.add("operation-three");
+        });
+        
+    }
+});

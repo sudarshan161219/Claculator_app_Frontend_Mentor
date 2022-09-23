@@ -69,6 +69,8 @@ table {
      --bs-Verydarkgrayishblue: hsl(221, 14%, 31%);
      --bs-White: rgb(255, 255, 255);
 
+
+/* ******************************************************** */
      /* Theme-2 */
 
      --theme2-Lightgraymainbackground: hsl(0, 0%, 90%);
@@ -88,11 +90,32 @@ table {
      
       --theme2-Verydarkgrayishyellow:hsl(60, 10%, 19%);
       --theme2-White: rgb(255, 255, 255);
-    }
+ 
     
+    /* ******************************************************** */
+     /* Theme-3 */
 
 
-    
+     --theme3-Lightgraymainbackground:hsl(268, 75%, 9%);
+     --theme3-togglekeypadbackground:  hsl(268, 71%, 12%) ;
+     --theme3-screenbackground: hsl(268, 71%, 12%) ;
+     
+     /* Keys */
+ 
+     --theme3-keybtnbackground:hsl(281, 89%, 26%);
+     --theme3-Vividmagentakeyshadow:hsl(285, 91%, 52%);
+     --theme3-PurecyankeyBackgroundToggle: hsl(176, 100%, 44%);
+     --theme3-SoftcyankeyShadow:hsl(177, 92%, 70%);
+     --theme3-Verydarkvioletkeybackground:hsl(268, 47%, 21%);
+     --theme3-Darkmagentakeyshadow: hsl(290, 70%, 36%);
+     
+      /* Text */
+     
+      --theme3-Lightyellow: hsl(52, 100%, 62%);
+      --theme3-Verydarkblue: hsl(198, 20%, 13%);
+      --theme2-White: rgb(255, 255, 255);
+}
+
     body {
         display: flex;
         align-items: center;
@@ -309,7 +332,7 @@ width: 46.6%;
     background-color: var(--bs-keyBackgroundToggle);
 }
 
-/* Themes */
+/* Themes-2 */
 .body-two{
     background-color:var(--theme2-Lightgraymainbackground);
     transition: all 0.3s;
@@ -350,7 +373,49 @@ width: 46.6%;
 /* Theme-3 */
 
 .body-three{
-  
-    background-color: burlywood;
+    background-color:var(--theme3-Lightgraymainbackground);
     transition: all 0.3s;
+}
+
+.header-three{
+    color: var(--theme3-Lightyellow);
+    transition: all 0.3s;
+}
+
+.output-three{
+    background-color: var(--theme3-screenbackground);
+    transition: all 0.3s;
+}
+
+.output .current-operand-three, 
+.output .previous-operand-three{
+    color: var(--theme3-Lightyellow);
+
+}
+
+.button-box-three, .toggle-three{
+    background-color: var(--theme3-togglekeypadbackground);
+}
+
+.delete-three, .reset-three{
+    background-color:var(--theme3-keybtnbackground);
+    box-shadow: var(--theme3-Darkmagentakeyshadow) 0px -30px 2px -25px inset;
+}
+
+.equal-three{
+    background-color:var(--theme3-PurecyankeyBackgroundToggle);
+    box-shadow: var(--theme3-SoftcyankeyShadow) 0px -30px 2px -25px inset;
+}
+
+.buttons-three{
+    color: var(--theme3-Lightyellow);
+    background-color: var(--theme3-Verydarkvioletkeybackground);
+    box-shadow: var(--theme3-Darkmagentakeyshadow) 0px -30px 2px -25px inset;
+
+}
+
+.operation-three{
+    color: var(--theme3-Lightyellow);
+    background-color: var(--theme3-Verydarkvioletkeybackground);
+    box-shadow: var(--theme3-Darkmagentakeyshadow) 0px -30px 2px -25px inset;
 }
